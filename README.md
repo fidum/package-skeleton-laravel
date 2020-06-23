@@ -1,8 +1,9 @@
 # :package_description
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/fidum/:package_name.svg?style=flat-square)](https://packagist.org/packages/fidum/:package_name)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/fidum/:package_name/run-tests?label=tests)](https://github.com/fidum/:package_name/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/fidum/:package_name.svg?style=flat-square)](https://packagist.org/packages/fidum/:package_name)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/fidum/:package_name.svg?style=for-the-badge)](https://packagist.org/packages/fidum/:package_name)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/fidum/:package_name/Tests?label=tests&style=for-the-badge)](https://github.com/fidum/:package_name/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Codecov](https://img.shields.io/codecov/c/github/fidum/:package_name?logo=codecov&logoColor=white&style=for-the-badge)](https://codecov.io/gh/fidum/:package_name)
+[![Twitter Follow](https://img.shields.io/twitter/follow/danmasonmp?label=Follow&logo=twitter&style=for-the-badge)](https://twitter.com/danmasonmp)
 
 **Note:** Replace ```:author_name``` ```:author_username``` ```:package_name``` ```:package_description``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line. You can also run `configure-skeleton.sh` to do this automatically.
 
