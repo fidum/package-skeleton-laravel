@@ -13,7 +13,7 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 You can install the package via composer:
 
 ```bash
-composer require fidum/package-skeleton-laravel
+composer require fidum/:package_name
 ```
 
 You can publish and run the migrations with:
