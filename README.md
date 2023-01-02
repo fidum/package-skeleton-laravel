@@ -1,7 +1,7 @@
 # :package_description
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/fidum/:package_slug.svg?style=for-the-badge)](https://packagist.org/packages/fidum/:package_slug)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/fidum/:package_slug/Tests?label=tests&style=for-the-badge)](https://github.com/fidum/:package_slug/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/fidum/:package_slug/run-tests.yml?branch=main&style=for-the-badge)](https://github.com/fidum/:package_slug/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Twitter Follow](https://img.shields.io/twitter/follow/danmasonmp?label=Follow&logo=twitter&style=for-the-badge)](https://twitter.com/danmasonmp)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
