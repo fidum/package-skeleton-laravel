@@ -154,7 +154,7 @@ $authorUsername = ask('Author username', $usernameGuess);
 
 $vendorName = ask('Vendor name', $authorUsername);
 $vendorSlug = slugify($vendorName);
-$vendorNamespace = ucwords($vendorName);
+$vendorNamespace = str_replace('-', '', ucwords($vendorName));
 $vendorNamespace = ask('Vendor namespace', $vendorNamespace);
 
 $currentDirectory = getcwd();
@@ -170,7 +170,7 @@ $variableName = lcfirst($className);
 $description = ask('Package description', "This is my package {$packageSlug}");
 
 $usePhpStan = confirm('Enable PhpStan?', true);
-$usePhpCsFixer = confirm('Enable PhpCsFixer?', true);
+$useLaravelPint = confirm('Enable Laravel Pint?', true);
 $useDependabot = confirm('Enable Dependabot?', true);
 $useLaravelRay = confirm('Use Ray for debugging?', true);
 $useUpdateChangelogWorkflow = confirm('Use automatic changelog updater workflow?', true);
@@ -183,7 +183,7 @@ writeln("Namespace  : {$vendorNamespace}\\{$className}");
 writeln("Class name : {$className}");
 writeln('---');
 writeln('Packages & Utilities');
-writeln('Use PhpCsFixer       : '.($usePhpCsFixer ? 'yes' : 'no'));
+writeln('Use Laravel/Pint       : '.($useLaravelPint ? 'yes' : 'no'));
 writeln('Use Larastan/PhpStan : '.($usePhpStan ? 'yes' : 'no'));
 writeln('Use Dependabot       : '.($useDependabot ? 'yes' : 'no'));
 writeln('Use Ray App          : '.($useLaravelRay ? 'yes' : 'no'));
@@ -228,9 +228,9 @@ foreach ($files as $file) {
     };
 }
 
-if (! $usePhpCsFixer) {
-    safeUnlink(__DIR__.'/.php_cs.dist.php');
-    safeUnlink(__DIR__.'/.github/workflows/php-cs-fixer.yml');
+if (! $useLaravelPint) {
+    safeUnlink(__DIR__.'/.github/workflows/fix-php-code-style-issues.yml');
+    safeUnlink(__DIR__.'/pint.json');
 }
 
 if (! $usePhpStan) {
